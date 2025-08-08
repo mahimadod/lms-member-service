@@ -3,6 +3,7 @@ package com.example.member.service;
 import com.example.member.entity.Member;
 import com.example.member.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
@@ -39,7 +40,7 @@ public class MemberServiceImpl implements MemberService {
                     member.setPhone(updatedMember.getPhone());
                     return memberRepository.save(member);
                 })
-                .orElseThrow(() -> new RuntimeException("Book not found"));
+                .orElseThrow(() -> new LMSServiceException(HttpStatus.NOT_FOUND,"Book not found"));
     }
 
     @Override
