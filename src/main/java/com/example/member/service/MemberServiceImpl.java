@@ -1,5 +1,6 @@
 package com.example.member.service;
 
+import com.example.exception_handler.LMSServiceException;
 import com.example.member.entity.Member;
 import com.example.member.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
