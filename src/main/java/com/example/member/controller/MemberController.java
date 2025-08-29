@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @RestController
-@RequestMapping("member-service/api/member")
+@RequestMapping("/api/member")
 @CrossOrigin
 public class MemberController {
 
