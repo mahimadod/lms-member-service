@@ -12,7 +12,6 @@
                 <stackTrace />
                 <context />
                 <mdc />
-                <customFields>{"service":"member-service"}</customFields>
             </providers>
         </encoder>
     </appender>
